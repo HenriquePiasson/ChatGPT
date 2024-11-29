@@ -1,0 +1,276 @@
+/* Reset Básico */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Define a imagem de fundo da academia */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Definições básicas */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('src/image/imagem-academia.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1.5rem;
+    border-bottom: 2px solid #28a745;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Coloca os itens em linha */
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+
+header h1 {     /*titulo padilha*/
+    text-align: left;
+    margin: 0px;
+    font-size: 2.5rem;
+}
+
+.icone-carrinho {
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: 24px; /* Ajuste o tamanho conforme necessário */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-left: 10px; /* Espaço opcional entre o texto e o ícone */
+    margin-left: -15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {     /*home, produtos*/
+    display: inline;
+}
+
+nav ul li a {       /*home, produtos - cor*/
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #28a745;
+}
+
+/* Estilo das seções */
+section {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparência no fundo das seções */
+    color: white;
+}
+
+#home h2 {
+    font-size: 2rem;
+}
+
+.texto {
+    font-size: 21px;
+    text-align: center;
+    padding: 15px;
+}
+
+#mercadoria{
+    padding: 1rem;
+    font-size: 42px;
+}
+
+#produtos {
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.preview-produtos {
+  display: flex;
+  max-width: 768px;
+  margin-inline: auto;
+}
+
+.p {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Estilo dos produtos */       
+.produto {
+    flex: 0 0 95px;  /* Define a largura fixa dos produtos */
+    scroll-snap-align: start;  /* Encaixa cada produto ao início na rolagem */
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 2px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produto:hover { 
+    transform: scale(1.05);
+}
+
+.produto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+button.comprar {
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button.comprar:hover {
+    background-color: #218838;
+}
+
+/* Estilo do rodapé */
+footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 2px solid #28a745;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo do container de produtos */
+.produtos-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 2rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+}
+
+.produtos-container::-webkit-scrollbar {
+    display: none;  /* Oculta a barra de rolagem */
+}
+
+.produto {
+    flex: 0 0 200px;
+    scroll-snap-align: start;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Estilo dos produtos */
+.produtos {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;  /* Impede quebra de linha nos produtos */
+}
+
+.produto img {
+    max-width: 100%; /* Mantém a imagem adaptada ao container */
+    height: 250px; /* Garante que a altura ajuste conforme a largura */
+    border-radius: 5px;
+}
+
+/* Estilo dos botões de rolagem */
+.scroll-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    height: 45px;  /* Define a altura dos botões */
+    width: 45px;   /* Define a largura dos botões */
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    border-radius: 70px; /* Arredonda os cantos do botão */
+    top: 50%;
+    transform: translateY(-50%);
+}    
+
+#scrollLeft {       /* Espaçamento entre o botão e os produtos */
+    margin-right: 15px;  
+    align-items: center;
+}
+
+#scrollRight {      /* Espaçamento entre o botão e os produtos */
+    margin-left: 15px;  
+}
+
+.scroll-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .produtos-container {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+        width: 100%;
+    }
+
+    .scroll-btn {
+        margin: 10px 0; /* Espaçamento vertical */
+    }
+}

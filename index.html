@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Padilha Suplementos - Potencialize seus treinos com nossos suplementos de qualidade.">
+    <meta name="keywords" content="suplementos, whey protein, creatina, colágeno, multivitamínico">
+    <title>Padilha Suplementos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Padilha Suplementos</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li> 
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#carrinho"></a></li>
+                <img src="src/image/carrinho-compras.png" alt="Carrinho" class="icone-carrinho">
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo à nossa loja de suplementos!</h2>
+        <p class="texto">Na nossa academia, você encontra um espaço completo dedicado ao seu bem-estar físico e mental, onde cada treino é pensado para transformar sua saúde...</p>
+    </section>
+
+    <section id="produtos">
+        <h1 id="mercadoria">Produtos</h1>
+
+        <div class="preview-produtos">
+          <button id="scrollLeft" class="scroll-btn">◀️</button> 
+          <div class="produtos-container">
+              <div class="produto">
+                  <img src="src/image/whey protein.jpg" alt="Whey Protein">
+                  <h3>Whey Protein</h3>
+                  <p>Preço: R$ 120,00</p>
+                  <button class="comprar" onclick="adicionarAoCarrinho('Whey Protein')">Comprar</button>
+              </div>
+
+              <div class="produto">
+                  <img src="src/image/creatina.webp" alt="Creatina">
+                  <h3>Creatina</h3>
+                  <p>Preço: R$ 80,00</p>
+                  <button class="comprar" onclick="adicionarAoCarrinho('Creatina')">Comprar</button>
+              </div>
+
+              <div class="produto">
+                  <img src="src/image/colágeno.webp" alt="Colágeno">
+                  <h3>Colágeno</h3>
+                  <p>Preço: R$ 60,00</p>
+                  <button class="comprar" onclick="adicionarAoCarrinho('Colágeno')">Comprar</button>
+              </div>
+
+              <div class="produto">
+                  <img src="src/image/garrafa.webp" alt="Garrafa">
+                  <h3>Garrafa 600ml</h3>
+                  <p>Preço: R$ 60,00</p>
+                  <button class="comprar" onclick="adicionarAoCarrinho('Garrafa Growth 600ml')">Comprar</button>
+              </div>
+
+              <div class="produto">
+                  <img src="src/image/galão.png" alt="Galão">
+                  <h3>Galão 2L</h3>
+                  <p>Preço: R$ 80,00</p>
+                  <button class="comprar" onclick="adicionarAoCarrinho('Galão Growth 2L')">Comprar</button>
+              </div>
+
+              <div class="produto">
+                  <img src="src/image/multivitamicio.webp" alt="Multivitamínico">
+                  <h3>Multivitamínico</h3>
+                  <p>Preço: R$ 80,00</p>
+                  <button class="comprar" onclick="adicionarAoCarrinho('Multivitamínico Growth')">Comprar</button>
+              </div>
+          </div>
+          <button id="scrollRight" class="scroll-btn">▶️</button>
+        </div>
+    </section>
+
+    <section id="carrinho">
+      <ul id="itensCarrinho"></ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: padilhasuplementos@gmail.com</p>
+        <p>Telefone: (41) 99999-9999</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Padilha Suplementos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
